@@ -1,3 +1,4 @@
+import com.darkovr.automat.ChainString
 import files.FileHandler
 import hash.HashAlgorithm
 import tornadofx.App
@@ -10,5 +11,6 @@ fun main(args: Array<String>) {
     //fileHandler.write(Register("x", "entero", 4, "*", "pr",0))
     //fileHandler.write(Register("y", "entero", 4, "*", "pr",1))
     //fileHandler.read()
-    println(HashAlgorithm.getHash("int"))
+    //println(HashAlgorithm.getHash("int"))
+    println(ChainString.init("#eerere#"))
 }

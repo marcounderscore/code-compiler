@@ -1,6 +1,6 @@
 package hash
 
-object HashAlgoritm {
+object HashAlgorithm {
     @JvmStatic
     fun getHash(str: String): Long {
         var hash = str.length.toLong()

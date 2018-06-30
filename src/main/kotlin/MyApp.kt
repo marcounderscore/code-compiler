@@ -1,5 +1,5 @@
 import files.FileHandler
-import hash.HashAlgoritm
+import hash.HashAlgorithm
 import tornadofx.App
 import views.Interface
 
@@ -10,5 +10,5 @@ fun main(args: Array<String>) {
     //fileHandler.write(Register("x", "entero", 4, "*", "pr",0))
     //fileHandler.write(Register("y", "entero", 4, "*", "pr",1))
     //fileHandler.read()
-    println(HashAlgoritm.getHash("int"))
+    println(HashAlgorithm.getHash("int"))
 }

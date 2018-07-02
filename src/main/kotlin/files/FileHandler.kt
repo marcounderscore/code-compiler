@@ -37,20 +37,21 @@ class FileHandler {
         file.seek(position)
         var position = 0
         do {
-            println("//-----Some register------//")
             val token = readString(file)
-            println("Token: "+token)
             val type = readString(file)
-            println("Type: "+type)
             val size = file.readInt()
-            println("Size: "+size)
             val value = readString(file)
-            println("Value: "+value)
             val category = readString(file)
-            println("Category: "+category)
-            position++
-            println("Position: "+position)
-            println("File pointer: "+file.filePointer)
+            if (token[0].toInt()>0){
+                println("//-----Some register------//")
+                println("Token: "+token)
+                println("Type: "+type)
+                println("Size: "+size)
+                println("Value: "+value)
+                println("Category: "+category)
+                println("Position: "+position)
+                println("File pointer: "+file.filePointer)
+            }
         }while (file.length()>file.filePointer)
     }
 

@@ -19,7 +19,7 @@ class FileHandler {
         writeString(register.value,file)
         writeString(register.category,file)
 
-        println("Written over symbol_table, Token: "+register.token+" Position: "+register.position)
+        println("Written over symbol_table, Token: "+register.token+" Position: "+register.position+", Category: "+register.category)
 
         file.close()
     }
@@ -52,6 +52,7 @@ class FileHandler {
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
             }
+            position++
         }while (file.length()>file.filePointer)
     }
 

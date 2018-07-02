@@ -4,11 +4,14 @@ import com.darkovr.automat.*
 import files.FileHandler
 import hash.HashAlgorithm
 import models.Register
+import views.Interface
+import views.Test
 import java.util.*
 
 class LexerAnalyzer {
     fun analyzeLine(data: String){
         val line = StringTokenizer(data)
+        var errors = ""
         while (line.hasMoreTokens()) {
             var category = ""
             val token = line.nextToken()
@@ -41,9 +44,13 @@ class LexerAnalyzer {
                     else -> "Token no reconocido"
                 }
             }
-            //println(token+" es "+category+" Posicion: "+HashAlgorithm.getHash(token))
-            val fileHandler = FileHandler()
-            fileHandler.write(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
+            if (category != "Token no reconocido"){
+                val fileHandler = FileHandler()
+                fileHandler.write(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
+            }else{
+                errors += "Lexer error: $token $category \n"
+                println("Lexer error: $token $category")
+            }
         }
     }
 }

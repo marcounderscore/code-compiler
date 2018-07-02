@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_json_javax_json_api_1_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__no_tornado_tornadofx_1_7_16.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_javax_json_1_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_41.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_41.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_41.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_41.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/code-compiler_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/code-compiler_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Constants.class" afterPath="$PROJECT_DIR$/out/production/classes/Constants.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/MyApp.class" afterPath="$PROJECT_DIR$/out/production/classes/MyApp.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/MyAppKt.class" afterPath="$PROJECT_DIR$/out/production/classes/MyAppKt.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Test.class" afterPath="$PROJECT_DIR$/out/production/classes/Test.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/analyzers/LexerAnalyzer.class" afterPath="$PROJECT_DIR$/out/production/classes/analyzers/LexerAnalyzer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/ChainString.class" afterPath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/ChainString.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/Comment.class" afterPath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/Comment.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/DecimalDigits.class" afterPath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/DecimalDigits.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/Identifier.class" afterPath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/Identifier.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/IntegerDigits.class" afterPath="$PROJECT_DIR$/out/production/classes/com/darkovr/automat/IntegerDigits.class" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/files/FileHandler.class" afterPath="$PROJECT_DIR$/out/production/classes/files/FileHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hash/HashAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/classes/hash/HashAlgorithm.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/models/Register.class" afterPath="$PROJECT_DIR$/out/production/classes/models/Register.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$$special$$inlined$inject$1.class" afterPath="$PROJECT_DIR$/out/production/classes/views/Interface$$special$$inlined$inject$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$1.class" afterPath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$3$1$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$3$1$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$3$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1.class" afterPath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1.class" afterPath="$PROJECT_DIR$/out/production/classes/views/Interface$root$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/Interface.class" afterPath="$PROJECT_DIR$/out/production/classes/views/Interface.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/views/MyController.class" afterPath="$PROJECT_DIR$/out/production/classes/views/MyController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
+      <change beforePath="$PROJECT_DIR$/symbol_table" afterPath="$PROJECT_DIR$/symbol_table" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,34 +71,10 @@
       <file leaf-file-name="MyApp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyApp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <element signature="e#0#99#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LexerAnalyzer.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#19#140#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileHandler.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-              <folding>
-                <element signature="e#15#96#0" expanded="true" />
+                <element signature="e#0#137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,36 +83,6 @@
       <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comment.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Comment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DecimalDigits.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/DecimalDigits.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Identifier.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -106,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntegerDigits.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt">
+      <file leaf-file-name="LexerAnalyzer.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -119,11 +103,74 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding>
-                <element signature="e#35#36#0" expanded="true" />
                 <element signature="e#74#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashAlgorithm.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interface.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1214">
+              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding>
+                <element signature="e#15#412#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegerDigits.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-405">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Identifier.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1543">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHandler.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#96#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,7 +192,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-all/ac27o8rbd0ic8ih41or9l32mv/gradle-4.0" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -330,8 +377,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4590907469000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2690351733" />
+        <entry key="$PROJECT_DIR$" value="4591166121000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3376090288" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="214329115" />
       </map>
@@ -538,7 +585,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/Interface.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/SymbolsTable/SymbolsTable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/file/FileHandler.kt" />
@@ -547,21 +593,22 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/models/Register.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/hash/hashAlgoritm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/hash/HashAlgoritm.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/models/ReservedWords.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Test.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/models/Category.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/Comment.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/DecimalDigits.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/Function.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Constants.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -626,6 +673,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code-compiler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -737,6 +792,23 @@
               <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
               <item name="models" type="cbb8eebc:String" user="models" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -744,7 +816,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -928,7 +1000,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1368" height="737" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -943,7 +1014,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -955,7 +1027,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -973,7 +1044,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -983,7 +1054,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#35#36#0" expanded="true" />
+            <element signature="e#35#36#0" expanded="false" />
             <element signature="e#74#75#0" expanded="true" />
           </folding>
         </state>
@@ -993,9 +1064,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +1073,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1014,7 +1083,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#35#36#0" expanded="true" />
+            <element signature="e#35#36#0" expanded="false" />
             <element signature="e#74#75#0" expanded="true" />
           </folding>
         </state>
@@ -1024,9 +1093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,9 +1108,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1117,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +1127,7 @@
         <state relative-caret-position="15">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding>
-            <element signature="e#35#36#0" expanded="true" />
+            <element signature="e#35#36#0" expanded="false" />
             <element signature="e#74#75#0" expanded="true" />
           </folding>
         </state>
@@ -1100,9 +1165,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1174,7 @@
         <state relative-caret-position="75">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1138,25 +1201,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.16/83c9e9d4b80211c31a9ac0f7a5fe998645f8e0fc/tornadofx-1.7.16-sources.jar!/tornadofx/Component.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="166" column="27" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,28 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Category.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1210,30 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/DecimalDigits.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Function.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1242,21 +1248,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.16/83c9e9d4b80211c31a9ac0f7a5fe998645f8e0fc/tornadofx-1.7.16-sources.jar!/tornadofx/Controls.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="e#35#36#0" expanded="true" />
-            <element signature="e#74#75#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="307" column="34" lean-forward="false" selection-start-line="307" selection-start-column="34" selection-end-line="307" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/dc11619be6c45157a142d3753017544896da8e69/kotlin-stdlib-1.2.41-sources.jar!/kotlin/Unit.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1269,33 +1272,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="-178">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/DecimalDigits.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1543">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1214">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="e#19#140#0" expanded="true" />
+            <element signature="e#15#412#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <element signature="e#74#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyApp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="e#0#99#0" expanded="true" />
+            <element signature="e#0#137#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#96#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

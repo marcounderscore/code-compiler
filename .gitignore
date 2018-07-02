@@ -1,0 +1,6 @@
+# ignore all out
+out/*
+# ignore all .idea
+.idea/*
+# ignore all .gradle
+.gradle/*

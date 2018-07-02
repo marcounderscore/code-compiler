@@ -5,13 +5,14 @@ object Identifier {
 
     @JvmStatic
     fun init(data: String): Boolean {
+        result = false
         q0(data,0)
         return isResult()
     }
 
     private fun q0(data: String, position: Int) {
         if (position<data.length){
-            println("q0 Position: "+position+" Data: "+data[position])
+            //println("q0 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 'a' -> q1(data,position+1)
                 'b' -> q1(data,position+1)
@@ -47,7 +48,7 @@ object Identifier {
     private fun q1(data: String, position: Int) {
         result = true
         if (position<data.length){
-            println("q0 Position: "+position+" Data: "+data[position])
+            //println("q1 Position: "+position+" Data: "+data[position])
             when (data[position].toUpperCase()) {
                 'A' -> q1(data,position+1)
                 'B' -> q1(data,position+1)
@@ -94,7 +95,7 @@ object Identifier {
     private fun q2(data: String, position: Int) {
         result = true
         if (position<data.length){
-            println("q1 Position: "+position+" Data: "+data[position])
+            //println("q2 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '0' -> q2(data,position+1)
                 '1' -> q2(data,position+1)

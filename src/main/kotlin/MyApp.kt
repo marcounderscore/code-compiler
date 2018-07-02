@@ -1,16 +1,14 @@
-import com.darkovr.automat.ChainString
+import analyzers.LexerAnalyzer
 import files.FileHandler
-import hash.HashAlgorithm
 import tornadofx.App
 import views.Interface
 
 class MyApp: App(Interface::class)
 fun main(args: Array<String>) {
-    //Application.launch(MyApp::class.java,*args)
+    //Application.launch(MyApp::class.java,*args
+    val lexerAnalyzer = LexerAnalyzer()
     val fileHandler = FileHandler()
-    //fileHandler.write(Register("x", "entero", 4, "*", "pr",0))
-    //fileHandler.write(Register("y", "entero", 4, "*", "pr",1))
-    //fileHandler.read()
-    //println(HashAlgorithm.getHash("int"))
-    println(ChainString.init("#eerere#"))
+    lexerAnalyzer.analyzeLine("class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }")
+    fileHandler.read()
+
 }

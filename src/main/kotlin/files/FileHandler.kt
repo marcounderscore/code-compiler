@@ -19,7 +19,7 @@ class FileHandler {
         writeString(register.value,file)
         writeString(register.category,file)
 
-        println("Written over symbol_table")
+        println("Written over symbol_table, Token: "+register.token+" Position: "+register.position)
 
         file.close()
     }

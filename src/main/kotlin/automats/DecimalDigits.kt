@@ -5,13 +5,14 @@ object DecimalDigits {
 
     @JvmStatic
     fun init(data: String): Boolean {
+        result = false
         q0(data,0)
         return isResult()
     }
 
     private fun q0(data: String, position: Int) {
         if (position<data.length){
-            println("q0 Position: "+position+" Data: "+data[position])
+            //println("q0 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '0' -> q1(data,position+1)
                 '1' -> q1(data,position+1)
@@ -30,7 +31,7 @@ object DecimalDigits {
 
     private fun q1(data: String, position: Int) {
         if (position<data.length){
-            println("q1 Position: "+position+" Data: "+data[position])
+            //println("q1 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '0' -> q1(data,position+1)
                 '1' -> q1(data,position+1)
@@ -50,7 +51,7 @@ object DecimalDigits {
 
     private fun q2(data: String, position: Int) {
         if (position<data.length){
-            println("q0 Position: "+position+" Data: "+data[position])
+            //println("q0 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '0' -> q3(data,position+1)
                 '1' -> q3(data,position+1)
@@ -70,7 +71,7 @@ object DecimalDigits {
     private fun q3(data: String, position: Int) {
         result = true
         if (position<data.length){
-            println("q1 Position: "+position+" Data: "+data[position])
+            //println("q1 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '0' -> q3(data,position+1)
                 '1' -> q3(data,position+1)

@@ -6,13 +6,14 @@ object ChainString {
 
     @JvmStatic
     fun init(data: String): Boolean {
+        result = false
         q0(data,0)
         return isResult()
     }
 
     private fun q0(data: String, position: Int) {
         if (position<data.length){
-            println("q0 Position: "+position+" Data: "+data[position])
+            //println("q0 Position: "+position+" Data: "+data[position])
             when (data[position]) {
                 '#' -> q1(data,position+1)
                 else -> setResult(result)
@@ -22,7 +23,7 @@ object ChainString {
 
     private fun q1(data: String, position: Int) {
         if (position<data.length){
-            println("q1 Position: "+position+" Data: "+data[position])
+            //println("q1 Position: "+position+" Data: "+data[position])
             when (data[position].toUpperCase()) {
                 'A' -> q1(data,position+1)
                 'B' -> q1(data,position+1)

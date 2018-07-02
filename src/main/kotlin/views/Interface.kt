@@ -4,14 +4,12 @@ import analyzers.LexerAnalyzer
 import files.FileHandler
 import javafx.application.Platform
 import javafx.beans.property.SimpleStringProperty
-import javafx.scene.control.SelectionMode
 import javafx.scene.paint.Color
 import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
 import java.time.LocalDate
 import java.time.Period
-import java.util.ArrayList
 import kotlin.concurrent.thread
 
 class Interface : View() {
@@ -26,15 +24,14 @@ class Interface : View() {
             }
             val editor = field {
                 textarea(input).text = "& er4 sds Int"
-                textarea(output)
             }
 
             val errorLabel = label("Errores") {
                 textFill = Color.RED
             }
-            /*val error = field {
+            val error = field {
                 textarea(output)
-            }*/
+            }
 
             button("Compilar") {
                 action {
@@ -46,8 +43,7 @@ class Interface : View() {
                             }
                             controller.insertIntoFile(input.value)
                             //controller.readFromFile()
-                            val test = Test()
-                            output.value = test.getData()
+                            output.value = "Salida a errores!"
                         }
                     }
                     //controller.writeToDb(output.value)
@@ -85,35 +81,18 @@ class MyController: Controller() {
 
 class MyFragment: Fragment() {
     override val root = form {
-        class Person(val id: Int, val name: String, val birthday: LocalDate) {
-            val age: Int get() = Period.between(birthday, LocalDate.now()).years
-        }
-
-        val persons = listOf(
-                Person(1,"Samantha Stuart",LocalDate.of(1981,12,4)),
-                Person(2,"Tom Marks",LocalDate.of(2001,1,23)),
-                Person(3,"Stuart Gills",LocalDate.of(1989,5,23)),
-                Person(3,"Nicole Williams",LocalDate.of(1998,8,11))
+        val register = listOf(
+                Register("Int","Int",4,"3","PR",0),
+                Register("x","Int",4,"","ID",0)
         ).observable()
 
-        tableview(persons) {
-            column("ID",Person::id)
-            column("Name", Person::name)
-            column("Birthday", Person::birthday)
-            column("Age",Person::age)
+        tableview(register) {
+            readonlyColumn("Token",Register::token)
+            readonlyColumn("Type",Register::type)
+            readonlyColumn("Size",Register::size)
+            readonlyColumn("Value",Register::value)
+            readonlyColumn("Category",Register::category)
+            readonlyColumn("Position",Register::position)
         }
     }
 }
-
-class Test(){
-    private var data: String = ""
-
-    fun getData(): String {
-        return data
-    }
-
-    fun setData(data: String) {
-        this.data = data
-    }
-}
-

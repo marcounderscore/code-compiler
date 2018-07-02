@@ -13,17 +13,9 @@ object DecimalDigits {
     private fun q0(data: String, position: Int) {
         if (position<data.length){
             //println("q0 Position: "+position+" Data: "+data[position])
-            when (data[position]) {
-                '0' -> q1(data,position+1)
-                '1' -> q1(data,position+1)
-                '2' -> q1(data,position+1)
-                '3' -> q1(data,position+1)
-                '4' -> q1(data,position+1)
-                '5' -> q1(data,position+1)
-                '6' -> q1(data,position+1)
-                '7' -> q1(data,position+1)
-                '8' -> q1(data,position+1)
-                '9' -> q1(data,position+1)
+            when (data[position].toInt()) {
+                //  0..9
+                in 48..57 -> q1(data,position+1)
                 else -> setResult(result)
             }
         }
@@ -32,18 +24,10 @@ object DecimalDigits {
     private fun q1(data: String, position: Int) {
         if (position<data.length){
             //println("q1 Position: "+position+" Data: "+data[position])
-            when (data[position]) {
-                '0' -> q1(data,position+1)
-                '1' -> q1(data,position+1)
-                '2' -> q1(data,position+1)
-                '3' -> q1(data,position+1)
-                '4' -> q1(data,position+1)
-                '5' -> q1(data,position+1)
-                '6' -> q1(data,position+1)
-                '7' -> q1(data,position+1)
-                '8' -> q1(data,position+1)
-                '9' -> q1(data,position+1)
-                '.' -> q2(data,position+1)
+            when (data[position].toInt()) {
+                //  0..9
+                in 48..57 -> q1(data,position+1)
+                '.'.toInt() -> q2(data,position+1)
                 else -> setResult(result)
             }
         }
@@ -52,17 +36,9 @@ object DecimalDigits {
     private fun q2(data: String, position: Int) {
         if (position<data.length){
             //println("q0 Position: "+position+" Data: "+data[position])
-            when (data[position]) {
-                '0' -> q3(data,position+1)
-                '1' -> q3(data,position+1)
-                '2' -> q3(data,position+1)
-                '3' -> q3(data,position+1)
-                '4' -> q3(data,position+1)
-                '5' -> q3(data,position+1)
-                '6' -> q3(data,position+1)
-                '7' -> q3(data,position+1)
-                '8' -> q3(data,position+1)
-                '9' -> q3(data,position+1)
+            when (data[position].toInt()) {
+                //  0..9
+                in 48..57 -> q3(data,position+1)
                 else -> setResult(result)
             }
         }
@@ -72,17 +48,9 @@ object DecimalDigits {
         result = true
         if (position<data.length){
             //println("q1 Position: "+position+" Data: "+data[position])
-            when (data[position]) {
-                '0' -> q3(data,position+1)
-                '1' -> q3(data,position+1)
-                '2' -> q3(data,position+1)
-                '3' -> q3(data,position+1)
-                '4' -> q3(data,position+1)
-                '5' -> q3(data,position+1)
-                '6' -> q3(data,position+1)
-                '7' -> q3(data,position+1)
-                '8' -> q3(data,position+1)
-                '9' -> q3(data,position+1)
+            when (data[position].toInt()) {
+                //  0..9
+                in 48..57 -> q3(data,position+1)
                 else -> result = false
             }
         }

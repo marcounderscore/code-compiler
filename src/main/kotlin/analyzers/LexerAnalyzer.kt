@@ -11,9 +11,15 @@ import java.util.*
 class LexerAnalyzer {
     fun analyzeLine(data: String){
         val line = StringTokenizer(data)
+        var lineCounter = 0
         while (line.hasMoreTokens()) {
             var category = Constants.NULL
             val token = line.nextToken()
+
+            if (token == System.getProperty("line.separator")){
+                lineCounter++
+            }
+
             Constants.RESERVED_WORDS_LIST.forEach { item ->
                 when (item) {
                     token -> category = Constants.RESERVED_WORD
@@ -46,8 +52,9 @@ class LexerAnalyzer {
             if (category != Constants.NULL){
                 val fileHandler = FileHandler()
                 fileHandler.write(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
+                App.registerList.add(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
             }else{
-                App.errorList.add(Error(token,"Lexer error","Token no encontrado",0)).toString()
+                App.errorList.add(Error(token,"Lexer error","Token no encontrado",lineCounter)).toString()
                 println("Lexer error: $token Token no reconocido")
             }
         }

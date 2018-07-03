@@ -84,12 +84,10 @@ class MyController: Controller() {
 
 class MyFragment: Fragment() {
     override val root = form {
-        val register = listOf(
-                Register("Int","Int",4,"3","PR",0),
-                Register("x","Int",4,"","ID",0)
-        ).observable()
 
-        tableview(register) {
+        val registerList = App.registerList.observable()
+
+        tableview(registerList) {
             readonlyColumn("Token",Register::token)
             readonlyColumn("Type",Register::type)
             readonlyColumn("Size",Register::size)

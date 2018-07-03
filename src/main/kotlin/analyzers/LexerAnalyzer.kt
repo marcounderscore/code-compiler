@@ -14,7 +14,7 @@ class LexerAnalyzer {
         for (i in data.indices) {
             lineCounter++
             val line = StringTokenizer(data[i])
-            while (line.hasMoreTokens()) {
+            loop@ while (line.hasMoreTokens()) {
                 var category = Constants.NULL
                 val token = line.nextToken()
 
@@ -41,7 +41,10 @@ class LexerAnalyzer {
                     category = when {
                         DecimalDigits.init(token) -> Constants.DECIMAL_DIGIT
                         ChainString.init(token) -> Constants.CHAIN_STRING
-                        Comment.init(token) -> Constants.COMMENT
+                        Comment.init(token) -> {
+                            Constants.COMMENT
+                            break@loop
+                        }
                         Identifier.init(token) -> Constants.IDENTIFIER
                         IntegerDigits.init(token) -> Constants.INTEGER_DIGIT
                         else -> Constants.NULL
@@ -52,7 +55,7 @@ class LexerAnalyzer {
                     fileHandler.write(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
                     //App.registerList.add(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
                 }else{
-                    App.errorList.add(Error(token,Constants.LEXER_ERROR,"Token no encontrado",lineCounter)).toString()
+                    App.errorList.add(Error(token,Constants.LEXER_ERROR,Constants.TOKEN_NOT_FOUND_EXCEPTION,lineCounter)).toString()
                     println("Lexer error: $token Token no reconocido")
                 }
             }

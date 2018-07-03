@@ -14,6 +14,11 @@ object Constants {
     val LEXER_ERROR = "Lexer Error"
     val SYNTACTIC_ERROR = "Syntactic Error"
     val SEMANTIC_ERROR = "Semantic Error"
+    val TOKEN_NOT_FOUND_EXCEPTION = "Token not found exception"
+    val DECIMAL_FORMAT_EXCEPTION = "Decimal format exception"
+    val NUMBER_FORMAT_EXCEPTION = "Number format exception"
+    val COMMENT_FORMAT_COMMENT = "Comment format exception"
+    val IDENTIFIER_FORMAT_EXCEPTION = "Identifier format exception"
     val INT_SIZE = 4
     val FLOAT_SIZE = 4
 }

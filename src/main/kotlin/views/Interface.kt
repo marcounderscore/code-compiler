@@ -52,7 +52,7 @@ class Interface : View() {
                             var outputStr = ""
                             runAsync {
                                 App.errorList.forEach { item ->
-                                    outputStr += item.init+" "+item.errorType+", token "+item.token+" "+item.description+", line "+item.line+"\n"
+                                    outputStr += item.init+" "+item.errorType+", '"+item.token+"' "+item.description+", line "+item.line+"\n"
                                 }
                             } ui {
                                 output.value = outputStr

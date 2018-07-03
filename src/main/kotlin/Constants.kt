@@ -11,6 +11,9 @@ object Constants {
     val COMMENT = "COM"
     val DELIMITER = "DEL"
     val NULL = "NULL"
+    val LEXER_ERROR = "Lexer Error"
+    val SYNTACTIC_ERROR = "Syntactic Error"
+    val SEMANTIC_ERROR = "Semantic Error"
     val INT_SIZE = 4
     val FLOAT_SIZE = 4
 }

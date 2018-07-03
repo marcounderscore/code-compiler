@@ -9,7 +9,6 @@ import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
 import App
-import javafx.stage.Stage
 import kotlin.concurrent.thread
 
 class Interface : View() {
@@ -27,6 +26,7 @@ class Interface : View() {
             }
             val editor = field {
                 textarea(input).minHeight = 300.0
+                //textarea(input).text = "& er4 sds // %$ Int class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }"
                 minHeight = 320.0
             }
 
@@ -45,7 +45,9 @@ class Interface : View() {
                                 Platform.runLater { progress = i.toDouble() / 100.0 }
                                 Thread.sleep(10)
                             }
-                            controller.insertIntoFile(input.value)
+                            controller.insertIntoFile(input.value.split("\n"))
+                            //val data = input.value.split("\n")
+
 
                             var outputStr = ""
                             runAsync {
@@ -78,7 +80,7 @@ class Interface : View() {
 }
 
 class MyController: Controller() {
-    fun insertIntoFile(inputValue: String){
+    fun insertIntoFile(inputValue: List<String>){
         val lexerAnalyzer = LexerAnalyzer()
         lexerAnalyzer.analyzeLine(inputValue)
     }

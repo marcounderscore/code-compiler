@@ -29,6 +29,7 @@ object ChainString {
                 in 65..90 -> q1(data,position+1)
                 //  0..9
                 in 48..57 -> q1(data,position+1)
+                ' '.toInt() -> q1(data,position+1)
                 '#'.toInt() -> setResult(true)
                 else -> setResult(false)
             }

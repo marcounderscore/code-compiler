@@ -16,7 +16,7 @@ class LexerAnalyzer {
             var category = Constants.NULL
             val token = line.nextToken()
 
-            if (token == System.getProperty("line.separator")){
+            if (token == "\n"){
                 lineCounter++
             }
 
@@ -52,7 +52,7 @@ class LexerAnalyzer {
             if (category != Constants.NULL){
                 val fileHandler = FileHandler()
                 fileHandler.write(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
-                App.registerList.add(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
+                //App.registerList.add(Register(token,"",0,"",category,HashAlgorithm.getHash(token)))
             }else{
                 App.errorList.add(Error(token,"Lexer error","Token no encontrado",lineCounter)).toString()
                 println("Lexer error: $token Token no reconocido")

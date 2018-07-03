@@ -9,6 +9,7 @@ import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
 import App
+import javafx.stage.Stage
 import kotlin.concurrent.thread
 
 class Interface : View() {
@@ -17,19 +18,23 @@ class Interface : View() {
     private val output = SimpleStringProperty()
 
     override val root = form {
+
+        style { setMinSize(900.0,420.0) }
+
         fieldset {
             val editorLabel = label("Editor") {
                 textFill = Color.BLUE
             }
             val editor = field {
-                textarea(input).text = "& er4 sds %#$ Int"
+                textarea(input).minHeight = 300.0
+                minHeight = 320.0
             }
 
             val errorLabel = label("Errores") {
                 textFill = Color.RED
             }
             val error = field {
-                textarea(output)
+                textarea(output).maxHeight = 100.0
             }
 
             button("Compilar") {
@@ -61,8 +66,9 @@ class Interface : View() {
 
             button("Tabla de simbolos") {
                 action {
-                    find<MyFragment>().openModal(stageStyle = StageStyle.UTILITY)
+                    App.registerList.clear()
                     controller.readFromFile()
+                    find<MyFragment>().openModal(stageStyle = StageStyle.UTILITY)
                 }
             }
 
@@ -84,6 +90,8 @@ class MyController: Controller() {
 
 class MyFragment: Fragment() {
     override val root = form {
+
+        style { setMinSize(600.0,420.0) }
 
         val registerList = App.registerList.observable()
 

@@ -1,5 +1,6 @@
 package files
 
+import hash.HashAlgorithm
 import models.Register
 import java.io.IOException
 import java.io.RandomAccessFile
@@ -51,6 +52,7 @@ class FileHandler {
                 println("Category: "+category)
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
+                App.registerList.add(Register(token,"",0,"",category, position.toLong()))
             }
             position++
         }while (file.length()>file.filePointer)

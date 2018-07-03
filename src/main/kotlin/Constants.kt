@@ -10,6 +10,7 @@ object Constants {
     val CHAIN_STRING = "CS"
     val COMMENT = "COM"
     val DELIMITER = "DEL"
+    val NULL = "NULL"
     val INT_SIZE = 4
     val FLOAT_SIZE = 4
 }

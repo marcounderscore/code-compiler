@@ -8,8 +8,7 @@ import javafx.scene.paint.Color
 import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
-import java.time.LocalDate
-import java.time.Period
+import App
 import kotlin.concurrent.thread
 
 class Interface : View() {
@@ -23,7 +22,7 @@ class Interface : View() {
                 textFill = Color.BLUE
             }
             val editor = field {
-                textarea(input).text = "& er4 sds Int"
+                textarea(input).text = "& er4 sds %#$ Int"
             }
 
             val errorLabel = label("Errores") {
@@ -42,14 +41,21 @@ class Interface : View() {
                                 Thread.sleep(10)
                             }
                             controller.insertIntoFile(input.value)
-                            //controller.readFromFile()
-                            output.value = "Salida a errores!"
+
+                            var outputStr = ""
+                            runAsync {
+                                App.errorList.forEach { item ->
+                                    outputStr += item.init+" "+item.errorType+", token "+item.token+" "+item.description+", line "+item.line+"\n"
+                                }
+                            } ui {
+                                output.value = outputStr
+                                println("ERROR_LIST_SIZE: "+App.errorList.size)
+                                App.errorList.clear()
+                            }
+
+
                         }
                     }
-                    //controller.writeToDb(output.value)
-                    //output.value = ""
-                    //controller.insertIntoFile(input.value)
-                    //controller.readFromFile()
                 }
             }
 
@@ -66,9 +72,6 @@ class Interface : View() {
 }
 
 class MyController: Controller() {
-    fun writeToDb(inputValue: String) {
-        println("Writing $inputValue to database!")
-    }
     fun insertIntoFile(inputValue: String){
         val lexerAnalyzer = LexerAnalyzer()
         lexerAnalyzer.analyzeLine(inputValue)

@@ -1,5 +1,7 @@
 package hash
 
+import kotlin.math.absoluteValue
+
 object HashAlgorithm {
     @JvmStatic
     fun getHash(str: String): Long {
@@ -8,6 +10,6 @@ object HashAlgorithm {
             hash = hash shl 5 xor (hash shr 27) xor str[i].toLong()
         }
         hash %= 353
-        return hash
+        return hash.absoluteValue
     }
 }

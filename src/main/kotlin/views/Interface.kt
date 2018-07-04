@@ -10,7 +10,6 @@ import javafx.scene.paint.Color
 import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
-import java.io.RandomAccessFile
 import kotlin.concurrent.thread
 
 class Interface : View() {

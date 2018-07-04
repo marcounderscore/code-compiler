@@ -93,7 +93,7 @@ class MyController: Controller() {
 class MyFragment: Fragment() {
     override val root = form {
 
-        style { setMinSize(600.0,420.0) }
+        style { setMinSize(800.0,420.0) }
 
         val registerList = App.registerList.observable()
 

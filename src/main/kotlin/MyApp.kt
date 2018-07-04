@@ -14,4 +14,5 @@ fun main(args: Array<String>) {
     //fileHandler.read()
     //println(ChainString.init("# Entre mas sean mejor #"))
     //println("& er4 sds // \n %$ Int \n class main { \n fun test ( ) : Int { \n Int value = 5 + 3 ; \n Float value = 5.5 ; \n if ( value < value2 ) { value = 20 ; \n } \n return value \n } \n }".split("\n").size)
+    //println(ChainString.init("# aqui y alla somos uno mismo #"))
 }

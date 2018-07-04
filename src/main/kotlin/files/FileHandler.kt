@@ -52,7 +52,7 @@ class FileHandler {
                 println("Category: "+category)
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
-                App.registerList.add(Register(token,"",0,"",category, position.toLong()))
+                App.registerList.add(Register(token,type,size,value,category,position.toLong()))
             }
             position++
         }while (file.length()>file.filePointer)

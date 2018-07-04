@@ -6,7 +6,7 @@ import java.io.IOException
 import java.io.RandomAccessFile
 
 /**
- * Register size: 260 bytes, 64 for every String and 4 for Int
+ * Register size: 324 bytes, 64 for every String and 4 for Int
  */
 class FileHandler {
     @Throws(IOException::class)

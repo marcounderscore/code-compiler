@@ -1,7 +1,7 @@
 object Constants {
-    val RESERVED_WORDS_LIST = arrayOf("class","main","fun","val","Int","String","Bool","Float","if","else","for","while","and","or","return")
-    val OPERATOR_LIST = arrayOf("+","-","*","/","%","=",">","<")
-    val DELIMITER_LIST = arrayOf(";","{","}",":","(",")")
+    val RESERVED_WORDS_LIST = arrayOf("class","fun","val","Int","String","Bool","Float","if","else","for","while","and","or","return")
+    val OPERATOR_LIST = arrayOf("+","-","*","/","=",">","<","==","=!")
+    val DELIMITER_LIST = arrayOf(";","{","}",":","(",")",",")
     val RESERVED_WORD = "PR"
     val IDENTIFIER = "ID"
     val OPERATOR = "OP"

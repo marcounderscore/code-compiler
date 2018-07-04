@@ -21,19 +21,19 @@ class Interface : View() {
         style { setMinSize(900.0,420.0) }
 
         fieldset {
-            val editorLabel = label("Editor") {
+            label("Editor") {
                 textFill = Color.BLUE
             }
-            val editor = field {
+            field {
                 textarea(input).minHeight = 300.0
                 //textarea(input).text = "& er4 sds // %$ Int class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }"
                 minHeight = 320.0
             }
 
-            val errorLabel = label("Errores") {
+            label("Errores") {
                 textFill = Color.RED
             }
-            val error = field {
+            field {
                 textarea(output).maxHeight = 100.0
             }
 
@@ -46,8 +46,6 @@ class Interface : View() {
                                 Thread.sleep(10)
                             }
                             controller.insertIntoFile(input.value.split("\n"))
-                            //val data = input.value.split("\n")
-
 
                             var outputStr = ""
                             runAsync {
@@ -59,8 +57,6 @@ class Interface : View() {
                                 println("ERROR_LIST_SIZE: "+App.errorList.size)
                                 App.errorList.clear()
                             }
-
-
                         }
                     }
                 }

@@ -24,6 +24,7 @@ class LexerAnalyzer {
                     if (isComment){
                         tempToken += "#"
                         token = tempToken
+                        tempToken = ""
                     }
                     isComment = !isComment
                 }

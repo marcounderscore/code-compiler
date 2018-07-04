@@ -2,6 +2,7 @@ package files
 
 import hash.HashAlgorithm
 import models.Register
+import java.io.File
 import java.io.IOException
 import java.io.RandomAccessFile
 
@@ -11,7 +12,7 @@ import java.io.RandomAccessFile
 class FileHandler {
     @Throws(IOException::class)
     fun write(register: Register) {
-        val file = RandomAccessFile("symbol_table", "rw")
+        val file = RandomAccessFile(Constants.file, "rw")
         file.seek(register.position*register.registerSize)
 
         writeString(register.token,file)
@@ -34,10 +35,10 @@ class FileHandler {
 
     @Throws(IOException::class)
     fun read(position: Long = 0){
-        val file = RandomAccessFile("symbol_table", "rw")
+        val file = RandomAccessFile(Constants.file, "rw")
         file.seek(position)
         var position = 0
-        do {
+        while(file.length()>file.filePointer){
             val token = readString(file)
             val type = readString(file)
             val size = file.readInt()
@@ -55,7 +56,7 @@ class FileHandler {
                 App.registerList.add(Register(token,type,size,value,category,position.toLong()))
             }
             position++
-        }while (file.length()>file.filePointer)
+        }
     }
 
     private fun readString(file: RandomAccessFile): String {

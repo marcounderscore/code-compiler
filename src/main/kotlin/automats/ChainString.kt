@@ -45,6 +45,7 @@ object ChainString {
                 '{'.toInt() -> q1(data,position+1)
                 '}'.toInt() -> q1(data,position+1)
                 '['.toInt() -> q1(data,position+1)
+                '"'.toInt() -> q1(data,position+1)
                 ']'.toInt() -> q1(data,position+1)
                 '#'.toInt() -> setResult(true)
                 else -> setResult(false)

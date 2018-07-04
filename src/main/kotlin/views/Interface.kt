@@ -1,5 +1,7 @@
 package views
 
+import App
+import Constants
 import analyzers.LexerAnalyzer
 import files.FileHandler
 import javafx.application.Platform
@@ -8,7 +10,7 @@ import javafx.scene.paint.Color
 import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
-import App
+import java.io.RandomAccessFile
 import kotlin.concurrent.thread
 
 class Interface : View() {
@@ -45,6 +47,8 @@ class Interface : View() {
                                 Platform.runLater { progress = i.toDouble() / 100.0 }
                                 Thread.sleep(10)
                             }
+
+                            Constants.file.delete()
                             controller.insertIntoFile(input.value.split("\n"))
 
                             var outputStr = ""

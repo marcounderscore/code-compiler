@@ -53,6 +53,13 @@ class LexerAnalyzer {
                         }
                     }
                     if (category == Constants.NULL){
+                        Constants.BOOLEAN_TYPE.forEach { item ->
+                            when (item) {
+                                token -> category = Constants.BOOLEAN
+                            }
+                        }
+                    }
+                    if (category == Constants.NULL){
                         category = when {
                             DecimalDigits.init(token) -> Constants.DECIMAL_DIGIT
                             ChainString.init(token) -> Constants.CHAIN_STRING

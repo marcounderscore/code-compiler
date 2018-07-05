@@ -47,19 +47,10 @@ object ChainString {
                 '['.toInt() -> q1(data,position+1)
                 '"'.toInt() -> q1(data,position+1)
                 ']'.toInt() -> q1(data,position+1)
-                '#'.toInt() -> q2(data,position+1)
+                '#'.toInt() -> setResult(true)
                 else -> setResult(false)
             }
         }
-    }
-
-    private fun q2(data: String, position: Int) {
-        result = true
-        if (position<data.length){
-            //println("q1 Position: "+position+" Data: "+data[position])
-            result = false
-        }
-        setResult(result)
     }
 
     private fun isResult(): Boolean {

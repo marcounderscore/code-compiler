@@ -82,6 +82,9 @@ class LexerAnalyzer {
                     }
                 }
             }
+            if(isComment){
+                App.errorList.add(Error(tempToken,Constants.LEXER_ERROR,Constants.COMMENT_FORMAT_EXCEPTION,lineCounter)).toString()
+            }
         }
     }
 }

@@ -55,7 +55,7 @@ class FileHandler {
                 println("Category: "+category)
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
-                App.registerList.add(Register(token,type,size,value,category,position.toLong(),typing))
+                Mutables.registerList.add(Register(token,type,size,value,category,position.toLong(),typing))
             }
             position++
         }

@@ -1,14 +1,13 @@
 package views
 
-import App
 import Constants
+import Mutables
 import analyzers.LexerAnalyzer
 import files.FileHandler
 import javafx.application.Platform
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import javafx.scene.paint.Color
-import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
 import kotlin.concurrent.thread
@@ -46,20 +45,20 @@ class EditorView : View() {
 
                             var outputStr = ""
                             runAsync {
-                                App.errorList.forEach { item ->
+                                Mutables.errorList.forEach { item ->
                                     outputStr += item.init+" "+item.errorType+", '"+item.token+"' "+item.description+", line "+item.line+"\n"
                                 }
                             } ui {
                                 errorView.output.value = outputStr
-                                println("ERROR_LIST_SIZE: "+App.errorList.size)
-                                App.errorList.clear()
+                                println("ERROR_LIST_SIZE: "+Mutables.errorList.size)
+                                Mutables.errorList.clear()
                             }
 
                             runAsync {
-                                App.registerList.clear()
+                                Mutables.registerList.clear()
                                 controller.readFromFile()
                             } ui {
-                                val registerList = App.registerList.observable()
+                                val registerList = Mutables.registerList.observable()
                                 tableView.registerList.asyncItems { registerList }
                             }
                         }

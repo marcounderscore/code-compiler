@@ -2,7 +2,7 @@ import models.Error
 import models.Register
 import java.util.ArrayList
 
-object App {
+object Mutables {
     @JvmStatic
     val registerList = ArrayList<Register>()
     @JvmStatic

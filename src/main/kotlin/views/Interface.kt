@@ -6,38 +6,32 @@ import analyzers.LexerAnalyzer
 import files.FileHandler
 import javafx.application.Platform
 import javafx.beans.property.SimpleStringProperty
+import javafx.collections.FXCollections
 import javafx.scene.paint.Color
 import javafx.stage.StageStyle
 import models.Register
 import tornadofx.*
 import kotlin.concurrent.thread
 
-class Interface : View() {
+class Interface: View() {
+    override val root = borderpane {
+        left<EditorView>()
+        right<SymbolsTable>()
+        bottom<ErrorsView>()
+    }
+}
+
+class EditorView : View() {
     private val controller: MyController by inject()
+    private val errorView: ErrorsView by inject()
+    private val tableView: SymbolsTable by inject()
     private val input = SimpleStringProperty()
-    private val output = SimpleStringProperty()
 
     override val root = form {
 
-        style { setMinSize(900.0,420.0) }
+        style{ setMinHeight(350.0) }
 
         fieldset {
-            label("Editor") {
-                textFill = Color.BLUE
-            }
-            field {
-                textarea(input).minHeight = 300.0
-                //textarea(input).text = "& er4 sds // %$ Int class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }"
-                minHeight = 320.0
-            }
-
-            label("Errores") {
-                textFill = Color.RED
-            }
-            field {
-                textarea(output).maxHeight = 100.0
-            }
-
             button("Compilar") {
                 action {
                     progressbar {
@@ -56,23 +50,30 @@ class Interface : View() {
                                     outputStr += item.init+" "+item.errorType+", '"+item.token+"' "+item.description+", line "+item.line+"\n"
                                 }
                             } ui {
-                                output.value = outputStr
+                                errorView.output.value = outputStr
                                 println("ERROR_LIST_SIZE: "+App.errorList.size)
                                 App.errorList.clear()
+                            }
+
+                            runAsync {
+                                App.registerList.clear()
+                                controller.readFromFile()
+                            } ui {
+                                val registerList = App.registerList.observable()
+                                tableView.registerList.asyncItems { registerList }
                             }
                         }
                     }
                 }
             }
 
-            button("Tabla de simbolos") {
-                action {
-                    App.registerList.clear()
-                    controller.readFromFile()
-                    find<MyFragment>().openModal(stageStyle = StageStyle.UTILITY)
-                }
+            label("Editor") {
+                textFill = Color.BLUE
             }
-
+            field {
+                textarea(input).minHeight = 350.0
+                //textarea(input).text = "& er4 sds // %$ Int class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }"
+            }
         }
 
     }
@@ -89,15 +90,28 @@ class MyController: Controller() {
     }
 }
 
-class MyFragment: Fragment() {
+class ErrorsView: View() {
+    val output = SimpleStringProperty()
+
     override val root = form {
 
-        style { setMinSize(850.0,420.0) }
+        fieldset{
+            label("Errores") {
+                textFill = Color.RED
+            }
+            field {
+                textarea(output)
+            }
+        }
+    }
+}
 
-        val registerList = App.registerList.observable()
+class SymbolsTable: View() {
+    val registerList = FXCollections.observableArrayList<Register>()!!
+    override val root = form {
 
         tableview(registerList) {
-            readonlyColumn("Token",Register::token)
+            readonlyColumn("Token",Register::token).minWidth = 300.0
             readonlyColumn("Type",Register::type)
             readonlyColumn("Size",Register::size)
             readonlyColumn("Value",Register::value)

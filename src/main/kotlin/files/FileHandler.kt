@@ -20,6 +20,7 @@ class FileHandler {
         file.writeInt(register.size)
         writeString(register.value,file)
         writeString(register.category,file)
+        writeString(register.typing,file)
 
         println("Written over symbol_table, Token: "+register.token+" Position: "+register.position+", Category: "+register.category)
 
@@ -44,6 +45,7 @@ class FileHandler {
             val size = file.readInt()
             val value = readString(file)
             val category = readString(file)
+            val typing =readString(file)
             if (token[0].toInt()>0){
                 println("//-----Some register------//")
                 println("Token: "+token)
@@ -53,7 +55,7 @@ class FileHandler {
                 println("Category: "+category)
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
-                App.registerList.add(Register(token,type,size,value,category,position.toLong()))
+                App.registerList.add(Register(token,type,size,value,category,position.toLong(),typing))
             }
             position++
         }

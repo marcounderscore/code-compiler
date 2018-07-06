@@ -18,6 +18,8 @@ object Constants {
     val FLOAT = "Float"
     val STRING = "String"
     val NULL = "NULL"
+    val CONSTANT = "Val"
+    val VARIABLE = "Var"
     val LEXER_ERROR = "Lexer Error"
     val SYNTACTIC_ERROR = "Syntactic Error"
     val SEMANTIC_ERROR = "Semantic Error"

@@ -6,7 +6,8 @@ data class Register(
         val size: Int,
         val value: String,
         val category: String,
-        val position: Long
+        val position: Long,
+        val typing: String
 ) {
-    val registerSize: Long = 260
+    val registerSize: Long = 324
 }

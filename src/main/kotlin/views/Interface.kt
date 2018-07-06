@@ -117,6 +117,7 @@ class SymbolsTable: View() {
             readonlyColumn("Value",Register::value)
             readonlyColumn("Category",Register::category)
             readonlyColumn("Position",Register::position)
+            readonlyColumn("Typing",Register::typing)
         }
     }
 }

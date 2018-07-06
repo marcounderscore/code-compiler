@@ -52,13 +52,6 @@ class LexerAnalyzer {
                             }
                         }
                     }
-                    /*if (category == Constants.NULL){
-                        Constants.BOOLEAN_TYPE.forEach { item ->
-                            when (item) {
-                                token -> category = Constants.BOOLEAN
-                            }
-                        }
-                    }*/
                     if (category == Constants.NULL){
                         category = when {
                             DecimalDigits.init(token) -> Constants.DECIMAL_DIGIT
@@ -74,7 +67,7 @@ class LexerAnalyzer {
                     }
                     if (category != Constants.NULL){
                         val fileHandler = FileHandler()
-                        fileHandler.write(Register(token,getType(category),getSize(category,token),"",category,HashAlgorithm.getHash(token)))
+                        fileHandler.write(Register(token,getType(category,token),getSize(category,token),"",category,HashAlgorithm.getHash(token)))
                     }else{
                         App.errorList.add(Error(token,Constants.LEXER_ERROR,Constants.TOKEN_NOT_FOUND_EXCEPTION,lineCounter)).toString()
                         println("Lexer error: $token Token no reconocido")
@@ -87,17 +80,23 @@ class LexerAnalyzer {
         }
     }
 
-    private fun getType(category: String): String{
+    private fun getType(category: String, token: String): String{
         var type = ""
         when (category){
-            Constants.RESERVED_WORD -> type = "null"
-            Constants.IDENTIFIER -> type = "null"
-            Constants.OPERATOR -> type = "null"
+            Constants.RESERVED_WORD -> {
+                Constants.BOOL_LIST.forEach { item ->
+                    when (item) {
+                        token -> type = Constants.BOOLEAN
+                    }
+                }
+            }
+            Constants.IDENTIFIER -> type = ""
+            Constants.OPERATOR -> type = ""
             Constants.DECIMAL_DIGIT -> type = Constants.FLOAT
             Constants.INTEGER_DIGIT -> type = Constants.INTEGER
             Constants.CHAIN_STRING -> type = Constants.STRING
-            Constants.COMMENT -> type = "null"
-            Constants.DELIMITER -> type = "null"
+            Constants.COMMENT -> type = ""
+            Constants.DELIMITER -> type = ""
         }
         return type
     }
@@ -105,14 +104,20 @@ class LexerAnalyzer {
     private fun getSize(category: String, token: String): Int{
         var size = 0
         when (category){
-            Constants.RESERVED_WORD -> size = 0
+            Constants.RESERVED_WORD -> {
+                Constants.BOOL_LIST.forEach { item ->
+                    when (item) {
+                        token -> size = Constants.BOOL_SIZE
+                    }
+                }
+            }
             Constants.IDENTIFIER -> size = 0
             Constants.OPERATOR -> size = 0
             Constants.DECIMAL_DIGIT -> size = Constants.FLOAT_SIZE
             Constants.INTEGER_DIGIT -> size = Constants.INT_SIZE
             Constants.CHAIN_STRING -> size = token.length-4
             Constants.COMMENT -> size = 0
-            Constants.OPERATOR -> size = 0
+            Constants.DELIMITER -> size = 0
         }
         return size
     }

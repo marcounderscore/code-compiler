@@ -2,8 +2,9 @@ import java.io.File
 
 object Constants {
     val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false")
-    val OPERATOR_LIST = arrayOf("+","-","*","/","=",">","<","==","=!")
+    val OPERATOR_LIST = arrayOf("+","-","*","/","=",">","<","==","!=")
     val DELIMITER_LIST = arrayOf(";","{","}",":","(",")",",")
+    val BOOL_LIST = arrayOf("true","false")
     val RESERVED_WORD = "PR"
     val IDENTIFIER = "ID"
     val OPERATOR = "OP"
@@ -27,5 +28,6 @@ object Constants {
     val IDENTIFIER_FORMAT_EXCEPTION = "Identifier format exception"
     val INT_SIZE = 4
     val FLOAT_SIZE = 4
+    val BOOL_SIZE = 1
     val file = File("symbols_table")
 }

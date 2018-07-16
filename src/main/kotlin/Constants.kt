@@ -1,3 +1,4 @@
+import models.SAT
 import java.io.File
 
 object Constants {
@@ -32,4 +33,12 @@ object Constants {
     val FLOAT_SIZE = 4
     val BOOL_SIZE = 1
     val file = File("symbols_table")
+
+    fun initSyntacticList(){
+        Mutables.syntacticList.add(SAT("E","E->TE'","","","E->TE'","",""))
+        Mutables.syntacticList.add(SAT("E'","","E'->+TE'","","","E'->_","E'->_"))
+        Mutables.syntacticList.add(SAT("T","T->FT'","","","T->FT'","",""))
+        Mutables.syntacticList.add(SAT("T'","","T'->_","T'->*FT","","T'->_","T'->_"))
+        Mutables.syntacticList.add(SAT("F","F->id","","","F->(E)'","",""))
+    }
 }

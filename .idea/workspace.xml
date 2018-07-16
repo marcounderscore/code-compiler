@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/App.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/Constants.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
       <change beforePath="$PROJECT_DIR$/symbols_table" afterPath="$PROJECT_DIR$/symbols_table" />
     </list>
@@ -33,53 +32,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyApp.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyApp.kt">
+      <file leaf-file-name="LexerAnalyzer.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#81#0" expanded="true" />
+                <element signature="e#19#177#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntegerDigits.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt">
+      <file leaf-file-name="Interface.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="227">
+              <caret line="160" column="41" lean-forward="false" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
+              <folding>
+                <element signature="e#15#352#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileHandler.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt">
+      <file leaf-file-name="Mutables.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Mutables.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="165">
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashAlgorithm.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
+      <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="197">
+              <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Error.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Error.kt">
+      <file leaf-file-name="SAT.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/SAT.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -95,46 +100,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interface.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="61" column="82" lean-forward="true" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
-              <folding>
-                <element signature="e#15#334#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mutables.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Mutables.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#69#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -564,18 +535,19 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/IntegerDigits.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/Identifier.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/DecimalDigits.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Test.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/kotlin/App.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Constants.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/models/Register.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/models/SAT.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Constants.kt" />
       </list>
     </option>
   </component>
@@ -599,6 +571,123 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="analyzers" type="cbb8eebc:String" user="analyzers" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="automats" type="cbb8eebc:String" user="automats" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="files" type="cbb8eebc:String" user="files" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="hash" type="cbb8eebc:String" user="hash" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="models" type="cbb8eebc:String" user="models" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
+              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
+              <item name="files" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
+              <item name="hash" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
+              <item name="models" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
+              <item name="views" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -677,124 +766,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="analyzers" type="cbb8eebc:String" user="analyzers" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="automats" type="cbb8eebc:String" user="automats" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="files" type="cbb8eebc:String" user="files" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="hash" type="cbb8eebc:String" user="hash" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="models" type="cbb8eebc:String" user="models" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="code-compiler" type="cbb8eebc:String" user="code-compiler" />
-              <item name="code-compiler_main" type="cbb8eebc:String" user="code-compiler_main" />
-              <item name="src/main" type="cbb8eebc:String" user="src/main" />
-              <item name="kotlin" type="cbb8eebc:String" user="kotlin" />
-              <item name="views" type="cbb8eebc:String" user="views" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
-              <item name="files" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
-              <item name="hash" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
-              <item name="models" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="code-compiler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="code-compiler" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="code-compiler_main" type="616d4139:PackageViewModuleNode" />
-              <item name="views" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1022,19 +994,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/Comment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +1027,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1086,7 +1048,7 @@
         <state relative-caret-position="30">
           <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <element signature="e#15#334#0" expanded="true" />
+            <element signature="e#15#352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1096,7 +1058,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,7 +1079,7 @@
         <state relative-caret-position="120">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <element signature="e#15#334#0" expanded="true" />
+            <element signature="e#15#352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1134,7 +1096,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="e#15#334#0" expanded="true" />
+            <element signature="e#15#352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,7 +1106,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1193,7 +1155,7 @@
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
-            <element signature="e#15#334#0" expanded="true" />
+            <element signature="e#15#352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1203,7 +1165,7 @@
         <state relative-caret-position="75">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1279,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,25 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="568" column="23" lean-forward="false" selection-start-line="568" selection-start-column="23" selection-end-line="568" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="77" column="24" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-          <folding>
-            <element signature="e#19#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-704">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-584">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1337,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,7 +1287,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Error.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1357,10 +1302,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Error.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyApp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hash/HashAlgorithm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1373,48 +1345,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyApp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Mutables.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/SAT.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/Interface.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="61" column="82" lean-forward="true" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
+        <state relative-caret-position="227">
+          <caret line="160" column="41" lean-forward="false" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
           <folding>
-            <element signature="e#15#334#0" expanded="true" />
+            <element signature="e#15#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

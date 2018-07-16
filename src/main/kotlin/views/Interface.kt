@@ -4,6 +4,7 @@ import Constants
 import Mutables
 import analyzers.LexerAnalyzer
 import files.FileHandler
+import files.SyntacticTableFile
 import javafx.application.Platform
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
@@ -113,7 +114,8 @@ class MyController: Controller() {
         fileHandler.read()
     }
     fun fillSyntacticTable(){
-        Constants.initSyntacticList()
+        val syntacticFile = SyntacticTableFile()
+        syntacticFile.getData()
     }
 }
 

@@ -1,28 +1,34 @@
 package files
 
-import Constants
-import Mutables
 import models.SAT
-import javax.xml.parsers.DocumentBuilderFactory
-
+import org.json.simple.JSONArray
+import org.json.simple.JSONObject
+import org.json.simple.parser.JSONParser
 
 class SyntacticTableFile {
     fun getData(){
-        val documentBuilderFactory = DocumentBuilderFactory.newInstance()
-        val documentBuilder = documentBuilderFactory.newDocumentBuilder()
-        val document = documentBuilder.parse(Constants.syntacticFile)
+        val jsonFile = JSONParser().parse(Constants.syntacticFile) as JSONArray
 
-        var i = 0
-        while (i<document.getElementsByTagName("production").length){
-            val name = document.getElementsByTagName("name").item(i).textContent
-            val id = document.getElementsByTagName("id").item(i).textContent
-            val plus = document.getElementsByTagName("plus").item(i).textContent
-            val by = document.getElementsByTagName("by").item(i).textContent
-            val openParenthesis = document.getElementsByTagName("open-parenthesis").item(i).textContent
-            val closeParenthesis = document.getElementsByTagName("close-parenthesis").item(i).textContent
-            val sign = document.getElementsByTagName("sign").item(i).textContent
-            Mutables.syntacticList.add(SAT(name,id,plus,by,openParenthesis,closeParenthesis,sign))
-            i++
+        for (data in jsonFile) {
+            val production = data as JSONObject
+
+            val name = production["name"] as String
+            val id = getData(production["id"] as JSONArray)
+            val plus = getData(production["+"] as JSONArray)
+            val by = getData(production["*"] as JSONArray)
+            val op = getData(production["("] as JSONArray)
+            val cp = getData(production[")"] as JSONArray)
+            val sign = getData(production["$"] as JSONArray)
+
+            Mutables.syntacticList.add(SAT(name,id,plus,by,op,cp,sign))
         }
+    }
+
+    private fun getData(jsonArray: JSONArray): String{
+        var data = ""
+        for (item in jsonArray) {
+            data += item.toString()+", "
+        }
+        return data
     }
 }

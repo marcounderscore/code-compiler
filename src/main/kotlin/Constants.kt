@@ -1,5 +1,6 @@
 import models.SAT
 import java.io.File
+import java.io.FileReader
 
 object Constants {
     val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false")
@@ -33,5 +34,5 @@ object Constants {
     val FLOAT_SIZE = 4
     val BOOL_SIZE = 1
     val file = File("symbols_table")
-    val syntacticFile = File("syntactic_table.xml")
+    val syntacticFile = FileReader("syntactic_table.json")
 }

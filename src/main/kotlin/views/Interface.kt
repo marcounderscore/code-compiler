@@ -154,7 +154,7 @@ class SymbolsTable: View() {
         }
 
         tableview(syntacticList) {
-            readonlyColumn("",SAT::s)
+            readonlyColumn("name",SAT::s)
             readonlyColumn("id",SAT::id)
             readonlyColumn("+",SAT::plus)
             readonlyColumn("*",SAT::by)

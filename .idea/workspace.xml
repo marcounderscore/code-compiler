@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="List to apply parsing analysis added">
+    <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/SyntacticTableFile.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/SyntacticTableFile.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
-      <change beforePath="$PROJECT_DIR$/symbols_table" afterPath="$PROJECT_DIR$/symbols_table" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -1014,7 +1009,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532140932720</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Some list name changed due to scalability">
+      <created>1532142685252</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532142685252</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1060,7 +1062,8 @@
     <MESSAGE value="Reserved word call added to avoid ambiguity" />
     <MESSAGE value="Grammar added" />
     <MESSAGE value="List to apply parsing analysis added" />
-    <option name="LAST_COMMIT_MESSAGE" value="List to apply parsing analysis added" />
+    <MESSAGE value="Some list name changed due to scalability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some list name changed due to scalability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

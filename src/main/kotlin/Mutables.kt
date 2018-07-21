@@ -10,4 +10,6 @@ object Mutables {
     val errorList = ArrayList<Error>()
     @JvmStatic
     val syntacticList = ArrayList<SAT>()
+    @JvmStatic
+    val codeList = ArrayList<Register>()
 }

@@ -1,9 +1,19 @@
 package analyzers
 
+import models.SyntacticDebugTable
+import java.util.*
+
 class SyntacticAnalyzer {
     fun makeSyntacticAnalysis(){
-        for (data in Mutables.codeList) {
-            println(data.token)
+        Collections.reverse(Mutables.codeList)
+
+
+
+        var input = ""
+        Mutables.codeList.forEach {
+            input += it.token+" "
         }
+        Mutables.syntacticDebugList.add(SyntacticDebugTable("$ E",input))
+        Mutables.codeList.clear()
     }
 }

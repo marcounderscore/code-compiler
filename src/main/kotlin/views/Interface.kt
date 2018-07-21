@@ -12,6 +12,7 @@ import javafx.collections.FXCollections
 import javafx.scene.paint.Color
 import models.Register
 import models.SAT
+import models.SyntacticDebugTable
 import tornadofx.*
 import kotlin.concurrent.thread
 
@@ -28,7 +29,8 @@ class EditorView : View() {
     private val errorView: ErrorsView by inject()
     private val tableView: SymbolsTable by inject()
     private val editorInput = SimpleStringProperty()
-    private val syntacticOutput = SimpleStringProperty()
+    val syntacticObservables = FXCollections.observableArrayList<SyntacticDebugTable>()!!
+    var outputStr = ""
 
     override val root = form {
 
@@ -51,12 +53,10 @@ class EditorView : View() {
                                 Thread.sleep(10)
                             }
 
-                            Constants.file.delete()
-                            controller.makeLexerAnalysis(editorInput.value.split("\n"))
-                            controller.makeSyntacticAnalysis()
+                            controller.makeAnalysis(editorInput.value.split("\n"))
 
                             //Debugging for errors output
-                            var outputStr = ""
+                            outputStr = ""
                             runAsync {
                                 Mutables.errorList.forEach { item ->
                                     outputStr += item.init+" "+item.errorType+", '"+item.token+"' "+item.description+", line "+item.line+"\n"
@@ -76,11 +76,14 @@ class EditorView : View() {
                                 tableView.registerList.asyncItems { registerList }
                             }
 
-                            //Debugging for syntactic output
+                            //Debugging for syntactic debug table
+                            outputStr = ""
                             runAsync {
-
+                                Mutables.syntacticDebugList.clear()
+                                controller.makeSyntacticAnalysis()
                             } ui {
-                                syntacticOutput.value = "Traza sintactica"
+                                val syntacticAnalysis = Mutables.syntacticDebugList.observable()
+                                syntacticObservables.asyncItems { syntacticAnalysis }
                             }
                         }
                     }
@@ -95,11 +98,13 @@ class EditorView : View() {
                 //textarea(input).text = "& er4 sds // %$ Int class main { fun test ( ) : Int { Int value = 5 + 3 ; Float value = 5.5 ; if ( value < value2 ) { value = 20 ; } return value } }"
             }
 
-            label("Reconocimiento sintactico") {
+            label("Syntactic debugger") {
                 textFill = Color.BROWN
             }
-            field {
-                textarea(syntacticOutput)
+            maxHeight = 500.0
+            tableview(syntacticObservables) {
+                readonlyColumn("Pile",SyntacticDebugTable::pile).minWidth = 150.0
+                readonlyColumn("Input",SyntacticDebugTable::input).minWidth = 400.0
             }
         }
 
@@ -123,6 +128,14 @@ class MyController: Controller() {
         val syntacticFile = SyntacticTableFile()
         syntacticFile.getData()
     }
+    fun initCodeList(){
+        Mutables.codeList.add(Register("$","",0,"","",0,""))
+    }
+    fun makeAnalysis(inputValue: List<String>){
+        Constants.file.delete()
+        initCodeList()
+        makeLexerAnalysis(inputValue)
+    }
 }
 
 class ErrorsView: View() {
@@ -131,7 +144,7 @@ class ErrorsView: View() {
     override val root = form {
 
         fieldset{
-            label("Errores") {
+            label("Errors") {
                 textFill = Color.RED
             }
             field {
@@ -149,6 +162,9 @@ class SymbolsTable: View() {
 
         style { setMaxSize(802.0,500.0) }
 
+        label("Symbols table") {
+            textFill = Color.BROWN
+        }
         tableview(registerList) {
             readonlyColumn("Token",Register::token).minWidth = 300.0
             readonlyColumn("Type",Register::type)
@@ -159,6 +175,9 @@ class SymbolsTable: View() {
             readonlyColumn("Typing",Register::typing)
         }
 
+        label("Syntactic analysis table") {
+            textFill = Color.BROWN
+        }
         tableview(syntacticList) {
             readonlyColumn("name",SAT::s)
             readonlyColumn("id",SAT::id)

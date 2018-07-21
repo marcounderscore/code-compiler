@@ -1,6 +1,7 @@
 import models.Error
 import models.Register
 import models.SAT
+import models.SyntacticDebugTable
 import java.util.ArrayList
 
 object Mutables {
@@ -13,5 +14,5 @@ object Mutables {
     @JvmStatic
     val codeList = ArrayList<Register>()
     @JvmStatic
-    val syntacticDebugList = ArrayList<Register>()
+    val syntacticDebugList = ArrayList<SyntacticDebugTable>()
 }

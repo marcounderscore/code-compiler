@@ -5,11 +5,13 @@ import java.util.ArrayList
 
 object Mutables {
     @JvmStatic
-    val registerList = ArrayList<Register>()
+    val lexerTableList = ArrayList<Register>()
     @JvmStatic
     val errorList = ArrayList<Error>()
     @JvmStatic
-    val syntacticList = ArrayList<SAT>()
+    val syntacticTableList = ArrayList<SAT>()
     @JvmStatic
     val codeList = ArrayList<Register>()
+    @JvmStatic
+    val syntacticDebugList = ArrayList<Register>()
 }

@@ -20,7 +20,7 @@ class SyntacticTableFile {
             val cp = getData(production[")"] as JSONArray)
             val sign = getData(production["$"] as JSONArray)
 
-            Mutables.syntacticList.add(SAT(name,id,plus,by,op,cp,sign))
+            Mutables.syntacticTableList.add(SAT(name,id,plus,by,op,cp,sign))
         }
     }
 

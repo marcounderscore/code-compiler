@@ -3,6 +3,7 @@ package views
 import Constants
 import Mutables
 import analyzers.LexerAnalyzer
+import analyzers.SyntacticAnalyzer
 import files.FileHandler
 import files.SyntacticTableFile
 import javafx.application.Platform
@@ -33,10 +34,10 @@ class EditorView : View() {
 
         //Fill the syntactic analysis table
         runAsync {
-            Mutables.syntacticList.clear()
+            Mutables.syntacticTableList.clear()
             controller.fillSyntacticTable()
         } ui {
-            val syntacticList = Mutables.syntacticList.observable()
+            val syntacticList = Mutables.syntacticTableList.observable()
             tableView.syntacticList.asyncItems { syntacticList }
         }
 
@@ -51,7 +52,8 @@ class EditorView : View() {
                             }
 
                             Constants.file.delete()
-                            controller.insertIntoFile(editorInput.value.split("\n"))
+                            controller.makeLexerAnalysis(editorInput.value.split("\n"))
+                            controller.makeSyntacticAnalysis()
 
                             //Debugging for errors output
                             var outputStr = ""
@@ -67,10 +69,10 @@ class EditorView : View() {
 
                             //Fill the lexer analysis table
                             runAsync {
-                                Mutables.registerList.clear()
+                                Mutables.lexerTableList.clear()
                                 controller.readFromFile()
                             } ui {
-                                val registerList = Mutables.registerList.observable()
+                                val registerList = Mutables.lexerTableList.observable()
                                 tableView.registerList.asyncItems { registerList }
                             }
 
@@ -105,9 +107,13 @@ class EditorView : View() {
 }
 
 class MyController: Controller() {
-    fun insertIntoFile(inputValue: List<String>){
+    fun makeLexerAnalysis(inputValue: List<String>){
         val lexerAnalyzer = LexerAnalyzer()
         lexerAnalyzer.analyzeLine(inputValue)
+    }
+    fun makeSyntacticAnalysis(){
+        val syntacticAnalysis = SyntacticAnalyzer()
+        syntacticAnalysis.makeSyntacticAnalysis()
     }
     fun readFromFile(){
         val fileHandler = FileHandler()

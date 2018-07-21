@@ -1,8 +1,6 @@
 package files
 
-import hash.HashAlgorithm
 import models.Register
-import java.io.File
 import java.io.IOException
 import java.io.RandomAccessFile
 
@@ -55,7 +53,7 @@ class FileHandler {
                 println("Category: "+category)
                 println("Position: "+position)
                 println("File pointer: "+file.filePointer)
-                Mutables.registerList.add(Register(token,type,size,value,category,position.toLong(),typing))
+                Mutables.lexerTableList.add(Register(token,type,size,value,category,position.toLong(),typing))
             }
             position++
         }

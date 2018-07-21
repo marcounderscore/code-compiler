@@ -1,9 +1,8 @@
-import models.SAT
 import java.io.File
 import java.io.FileReader
 
 object Constants {
-    val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false")
+    val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false","empty","call")
     val OPERATOR_LIST = arrayOf("+","-","*","/","=",">","<","==","!=")
     val DELIMITER_LIST = arrayOf(";","{","}",":","(",")",",")
     val BOOL_LIST = arrayOf("true","false")

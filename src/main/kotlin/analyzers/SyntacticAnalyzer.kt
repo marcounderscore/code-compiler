@@ -1,19 +1,21 @@
 package analyzers
 
+import Mutables
 import models.SyntacticDebugTable
-import java.util.*
 
 class SyntacticAnalyzer {
     fun makeSyntacticAnalysis(){
-        Collections.reverse(Mutables.codeList)
-
-
 
         var input = ""
-        Mutables.codeList.forEach {
-            input += it.token+" "
+        while (!Mutables.codeList.empty()){
+            input += Mutables.codeList.peek().token+" "
+            Mutables.codeList.pop()
         }
         Mutables.syntacticDebugList.add(SyntacticDebugTable("$ E",input))
         Mutables.codeList.clear()
+    }
+
+    fun testSyntacticTable(pile: String, input: String){
+
     }
 }

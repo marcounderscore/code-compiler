@@ -112,7 +112,7 @@ class EditorView : View() {
 }
 
 class MyController: Controller() {
-    fun makeLexerAnalysis(inputValue: List<String>){
+    private fun makeLexerAnalysis(inputValue: List<String>){
         val lexerAnalyzer = LexerAnalyzer()
         lexerAnalyzer.analyzeLine(inputValue)
     }
@@ -128,8 +128,8 @@ class MyController: Controller() {
         val syntacticFile = SyntacticTableFile()
         syntacticFile.getData()
     }
-    fun initCodeList(){
-        Mutables.codeList.add(Register("$","",0,"","",0,""))
+    private fun initCodeList(){
+        Mutables.codeList.push(Register("$","",0,"","",0,""))
     }
     fun makeAnalysis(inputValue: List<String>){
         Constants.file.delete()

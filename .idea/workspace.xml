@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/Mutables.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Test.java" afterPath="$PROJECT_DIR$/src/main/kotlin/Test.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/analyzers/LexerAnalyzer.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/analyzers/SyntacticAnalyzer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/analyzers/SyntacticAnalyzer.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/FileHandler.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/files/SyntacticTableFile.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/files/SyntacticTableFile.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/SAT.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/models/SAT.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/views/Interface.kt" />
-      <change beforePath="$PROJECT_DIR$/symbols_table" afterPath="$PROJECT_DIR$/symbols_table" />
-      <change beforePath="$PROJECT_DIR$/syntactic_table.json" afterPath="$PROJECT_DIR$/syntactic_table.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -62,14 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SyntacticAnalyzer.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SyntacticAnalyzer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/SyntacticAnalyzer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="510">
               <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
               <folding>
                 <element signature="e#19#146#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChainString.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,24 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Terminal.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Terminal.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Terminal.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Constants.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1068,7 +1056,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532168336574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Syntactic analysis finished">
+      <created>1532306508351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1532306508351</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1127,7 +1122,8 @@
     <MESSAGE value="Syntactic analyzer started" />
     <MESSAGE value="Modified a new class to allow show a new table with the syntactic procedure" />
     <MESSAGE value="Stack added to allow syntactic analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stack added to allow syntactic analysis" />
+    <MESSAGE value="Syntactic analysis finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Syntactic analysis finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1391,14 +1387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Register.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1441,14 +1429,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/SAT.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Terminal.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1506,11 +1486,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/analyzers/SyntacticAnalyzer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="510">
           <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
             <element signature="e#19#146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/automats/ChainString.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/models/Terminal.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -142,7 +142,7 @@ class MyController: Controller() {
     fun initStacks(){
         Mutables.codeStack.clear()
         Mutables.inputStack.clear()
-        Mutables.inputStack.push("$")
+        //Mutables.inputStack.push("$")
         Mutables.codeStack.push("$")
         Mutables.codeStack.push("E")
     }

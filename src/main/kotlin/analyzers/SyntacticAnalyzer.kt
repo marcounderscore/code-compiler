@@ -10,6 +10,8 @@ import kotlin.collections.ArrayList
 
 class SyntacticAnalyzer {
     fun makeSyntacticAnalysis(){
+        Mutables.inputStack.push("$")
+        Collections.reverse(Mutables.inputStack)
         while (Mutables.codeStack.peek() != "$") {
             if (Mutables.codeStack.peek() != Mutables.inputStack.peek()){
                 val rule = getRule(Mutables.codeStack.peek(), Mutables.inputStack.peek())

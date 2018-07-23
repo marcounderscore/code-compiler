@@ -2,18 +2,18 @@ import java.io.File
 import java.io.FileReader
 
 object Constants {
-    val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false","empty","call")
+    val RESERVED_WORDS_LIST = arrayOf("class","fun","val","var","Int","String","Bool","Float","if","else","for","while","and","or","return","true","false","empty","call","until","in")
     val OPERATOR_LIST = arrayOf("+","-","*","/","=",">","<","==","!=")
     val DELIMITER_LIST = arrayOf(";","{","}",":","(",")",",")
     val BOOL_LIST = arrayOf("true","false")
-    val RESERVED_WORD = "PR"
-    val IDENTIFIER = "ID"
-    val OPERATOR = "OP"
-    val DECIMAL_DIGIT = "DD"
-    val INTEGER_DIGIT = "DE"
-    val CHAIN_STRING = "CS"
-    val COMMENT = "COM"
-    val DELIMITER = "DEL"
+    val RESERVED_WORD = "pr"
+    val IDENTIFIER = "id"
+    val OPERATOR = "op"
+    val DECIMAL_DIGIT = "dd"
+    val INTEGER_DIGIT = "de"
+    val CHAIN_STRING = "cs"
+    val COMMENT = "com"
+    val DELIMITER = "del"
     val BOOLEAN = "Bool"
     val INTEGER = "Int"
     val FLOAT = "Float"

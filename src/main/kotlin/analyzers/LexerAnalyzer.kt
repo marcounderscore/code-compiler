@@ -68,7 +68,7 @@ class LexerAnalyzer {
                     if (category != Constants.NULL){
                         val fileHandler = FileHandler()
                         fileHandler.write(Register(token,getType(category,token),getSize(category,token),"",category,HashAlgorithm.getHash(token),getTyping(category,token)))
-                        Mutables.inputStack.push(token)
+                        pushInput(token,category)
                     }else{
                         Mutables.errorList.add(Error(token,Constants.LEXER_ERROR,Constants.TOKEN_NOT_FOUND_EXCEPTION,lineCounter)).toString()
                         println("Lexer error: $token Token no reconocido")
@@ -142,5 +142,15 @@ class LexerAnalyzer {
             Constants.DELIMITER -> typing = ""
         }
         return typing
+    }
+
+    private fun pushInput(token: String, category: String){
+        when (category){
+            Constants.IDENTIFIER -> Mutables.inputStack.push(Constants.IDENTIFIER)
+            Constants.DECIMAL_DIGIT -> Mutables.inputStack.push(Constants.DECIMAL_DIGIT)
+            Constants.INTEGER_DIGIT -> Mutables.inputStack.push(Constants.INTEGER_DIGIT)
+            Constants.CHAIN_STRING -> Mutables.inputStack.push(Constants.CHAIN_STRING)
+            else -> Mutables.inputStack.push(token)
+        }
     }
 }

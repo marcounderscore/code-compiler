@@ -114,8 +114,8 @@ class EditorView : View() {
 
             setMaxSize(550.0,500.0)
             tableview(syntacticObservables) {
-                readonlyColumn("Pile",SyntacticDebugTable::pile).minWidth = 275.0
-                readonlyColumn("Input",SyntacticDebugTable::input).minWidth = 500.0
+                readonlyColumn("Stack",SyntacticDebugTable::pile).minWidth = 700.0
+                readonlyColumn("Input",SyntacticDebugTable::input).minWidth = 700.0
             }
         }
 
@@ -144,7 +144,7 @@ class MyController: Controller() {
         Mutables.inputStack.clear()
         //Mutables.inputStack.push("$")
         Mutables.codeStack.push("$")
-        Mutables.codeStack.push("E")
+        Mutables.codeStack.push("APP")
     }
     fun makeAnalysis(inputValue: List<String>){
         Constants.file.delete()
@@ -202,13 +202,46 @@ class SymbolsTable: View() {
             textFill = Color.BROWN
         }
         tableview(syntacticList) {
-            readonlyColumn("name",SAT::name)
-            readonlyColumn("id",SAT::id)
-            readonlyColumn("+",SAT::plus)
-            readonlyColumn("*",SAT::by)
-            readonlyColumn("(",SAT::opPar)
-            readonlyColumn(")",SAT::clPar)
-            readonlyColumn("$",SAT::sign)
+            readonlyColumn("name",SAT::_name).minWidth = 300.0
+            readonlyColumn("class",SAT::_class).minWidth = 300.0
+            readonlyColumn("id",SAT::_id).minWidth = 300.0
+            readonlyColumn("{",SAT::_ob).minWidth = 300.0
+            readonlyColumn("}",SAT::_cb).minWidth = 300.0
+            readonlyColumn(",",SAT::_coma).minWidth = 300.0
+            readonlyColumn("=",SAT::_equal).minWidth = 300.0
+            readonlyColumn("val",SAT::_val).minWidth = 300.0
+            readonlyColumn("var",SAT::_var).minWidth = 300.0
+            readonlyColumn("de",SAT::_de).minWidth = 300.0
+            readonlyColumn("dd",SAT::_dd).minWidth = 300.0
+            readonlyColumn("cs",SAT::_cs).minWidth = 300.0
+            readonlyColumn("true",SAT::_true).minWidth = 300.0
+            readonlyColumn("false",SAT::_false).minWidth = 300.0
+            readonlyColumn("String",SAT::_String).minWidth = 300.0
+            readonlyColumn("Bool",SAT::_Bool).minWidth = 300.0
+            readonlyColumn("Int",SAT::_Int).minWidth = 300.0
+            readonlyColumn("Float",SAT::_Float).minWidth = 300.0
+            readonlyColumn("fun",SAT::_fun).minWidth = 300.0
+            readonlyColumn("(",SAT::_op).minWidth = 300.0
+            readonlyColumn(")",SAT::_cp).minWidth = 300.0
+            readonlyColumn(":",SAT::_colon).minWidth = 300.0
+            readonlyColumn("return",SAT::_return).minWidth = 300.0
+            readonlyColumn("empty",SAT::_empty).minWidth = 300.0
+            readonlyColumn("if",SAT::_if).minWidth = 300.0
+            readonlyColumn("else",SAT::_else).minWidth = 300.0
+            readonlyColumn("while",SAT::_while).minWidth = 300.0
+            readonlyColumn("for",SAT::_for).minWidth = 300.0
+            readonlyColumn("until",SAT::_until).minWidth = 300.0
+            readonlyColumn("in",SAT::_in).minWidth = 300.0
+            readonlyColumn("call",SAT::_call).minWidth = 300.0
+            readonlyColumn("+",SAT::_plus).minWidth = 300.0
+            readonlyColumn("-",SAT::_minus).minWidth = 300.0
+            readonlyColumn("/",SAT::_div).minWidth = 300.0
+            readonlyColumn("and",SAT::_and).minWidth = 300.0
+            readonlyColumn("or",SAT::_or).minWidth = 300.0
+            readonlyColumn(">",SAT::_gt).minWidth = 300.0
+            readonlyColumn("<",SAT::_lt).minWidth = 300.0
+            readonlyColumn("!=",SAT::_ne).minWidth = 300.0
+            readonlyColumn("==",SAT::_dequal).minWidth = 300.0
         }
     }
 }

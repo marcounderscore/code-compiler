@@ -29,6 +29,7 @@ object Constants {
     val NUMBER_FORMAT_EXCEPTION = "Number format exception"
     val COMMENT_FORMAT_EXCEPTION = "Comment format exception"
     val IDENTIFIER_FORMAT_EXCEPTION = "Identifier format exception"
+    val RULE_NOT_FOUND_EXCEPTION = "Rule not found exception"
     val INT_SIZE = 4
     val FLOAT_SIZE = 4
     val BOOL_SIZE = 1

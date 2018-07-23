@@ -86,9 +86,14 @@ class EditorView : View() {
                             runAsync {
                                 Mutables.syntacticDebugList.clear()
                                 controller.makeSyntacticAnalysis()
+                                Mutables.errorList.forEach { item ->
+                                    outputStr += item.init+" "+item.errorType+", '"+item.token+"' "+item.description+", line "+item.line+"\n"
+                                }
                             } ui {
                                 val syntacticAnalysis = Mutables.syntacticDebugList.observable()
                                 syntacticObservables.asyncItems { syntacticAnalysis }
+                                errorView.errorOutput.value = outputStr
+                                println("ERROR_LIST_SIZE: "+Mutables.errorList.size)
                             }
                         }
                     }

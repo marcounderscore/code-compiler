@@ -1,7 +1,8 @@
 package analyzers
 
+import Constants
 import Mutables
-import models.Register
+import models.Error
 import models.SyntacticDebugTable
 import java.util.*
 import kotlin.collections.ArrayList
@@ -9,16 +10,10 @@ import kotlin.collections.ArrayList
 
 class SyntacticAnalyzer {
     fun makeSyntacticAnalysis(){
-
-        /*for (i in 0 until 10)
-            printStack(Mutables.codeStack.peek().token)*/
-
         while (Mutables.codeStack.peek() != "$") {
             if (Mutables.codeStack.peek() != Mutables.inputStack.peek()){
                 val rule = getRule(Mutables.codeStack.peek(), Mutables.inputStack.peek())
-                //println("codeStack: "+Mutables.codeStack.toString()+", inputStack:  "+Mutables.inputStack.toString())
-                //println("Rule: "+rule)
-                printStacks()
+                printStacks() //Print the stacks in the interface
                 if (!rule.isEmpty()){
                     Mutables.codeStack.pop()
                     if (rule[0] != "ε"){
@@ -28,20 +23,18 @@ class SyntacticAnalyzer {
                         }
                         Collections.reverse(rule)
                     }
-                }else{
-                    println("Error sintactico")
+                }else{  //The analysis found an error, there is no rule for the input
+                    Mutables.errorList.add(Error("Rule: "+Mutables.codeStack.peek()+" <> "+Mutables.inputStack.peek(),Constants.SYNTACTIC_ERROR,Constants.RULE_NOT_FOUND_EXCEPTION,1)).toString()
                     break
                 }
-            }else{
-                //println("codeStack: "+Mutables.codeStack.toString()+", inputStack:  "+Mutables.inputStack.toString())
+            }else{ //there are the same terminal in both stacks
                 printStacks()
                 Mutables.codeStack.pop()
                 Mutables.inputStack.pop()
             }
         }
-        if (Mutables.codeStack.peek() == "$") {
+        if (Mutables.codeStack.peek() == "$") { //The code stack is '$', so it's finished and right
             printStacks()
-            //println("Lo has hecho bien :')")
         }
     }
 

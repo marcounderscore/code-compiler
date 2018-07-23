@@ -1,0 +1,21 @@
+class asdfg { 
+	val Int test1 = 3 , test2 = 4 , test6 = 4.4
+	var String test3 = # asdsada # , x = # asdas # 
+	val Float test4 = 4.6
+	var Bool test5 = true
+	fun data ( Int param , String param1 ) : String { 
+		if ( 5 > 3 and 3 < 5 ) { x = 3 } else { 
+			if ( true ) { } else { } 
+		}
+		while ( true ) {
+			while ( false ) { }
+		}
+		for ( i in 0 until 10 ) { }
+ 		return x	
+	}
+	fun data ( Int param ) : Int { 
+		x = # asdas # 
+		return empty 
+	}
+	val Int test = y
+}

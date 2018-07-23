@@ -29,8 +29,8 @@ class EditorView : View() {
     private val errorView: ErrorsView by inject()
     private val tableView: SymbolsTable by inject()
     private val editorInput = SimpleStringProperty()
-    val syntacticObservables = FXCollections.observableArrayList<SyntacticDebugTable>()!!
-    var outputStr = ""
+    private val syntacticObservables = FXCollections.observableArrayList<SyntacticDebugTable>()!!
+    private var outputStr = ""
 
     override val root = form {
 
@@ -38,6 +38,7 @@ class EditorView : View() {
         runAsync {
             Mutables.syntacticTableList.clear()
             controller.fillSyntacticTable()
+            //controller.printList()
         } ui {
             val syntacticList = Mutables.syntacticTableList.observable()
             tableView.syntacticList.asyncItems { syntacticList }
@@ -53,6 +54,11 @@ class EditorView : View() {
                                 Thread.sleep(10)
                             }
 
+                            //clean errors list
+                            Mutables.errorList.clear()
+                            //initStacks
+                            controller.initStacks()
+                            //Make lexer analysis and fill input stack for further syntactic analysis
                             controller.makeAnalysis(editorInput.value.split("\n"))
 
                             //Debugging for errors output
@@ -64,7 +70,6 @@ class EditorView : View() {
                             } ui {
                                 errorView.errorOutput.value = outputStr
                                 println("ERROR_LIST_SIZE: "+Mutables.errorList.size)
-                                Mutables.errorList.clear()
                             }
 
                             //Fill the lexer analysis table
@@ -101,10 +106,11 @@ class EditorView : View() {
             label("Syntactic debugger") {
                 textFill = Color.BROWN
             }
-            maxHeight = 500.0
+
+            setMaxSize(550.0,500.0)
             tableview(syntacticObservables) {
-                readonlyColumn("Pile",SyntacticDebugTable::pile).minWidth = 150.0
-                readonlyColumn("Input",SyntacticDebugTable::input).minWidth = 400.0
+                readonlyColumn("Pile",SyntacticDebugTable::pile).minWidth = 275.0
+                readonlyColumn("Input",SyntacticDebugTable::input).minWidth = 500.0
             }
         }
 
@@ -128,13 +134,25 @@ class MyController: Controller() {
         val syntacticFile = SyntacticTableFile()
         syntacticFile.getData()
     }
-    private fun initCodeList(){
-        Mutables.codeList.push(Register("$","",0,"","",0,""))
+    fun initStacks(){
+        Mutables.codeStack.clear()
+        Mutables.inputStack.clear()
+        Mutables.inputStack.push("$")
+        Mutables.codeStack.push("$")
+        Mutables.codeStack.push("E")
     }
     fun makeAnalysis(inputValue: List<String>){
         Constants.file.delete()
-        initCodeList()
         makeLexerAnalysis(inputValue)
+    }
+
+    fun printList(){
+        Mutables.syntacticDynamicList.forEach { item ->
+            item.forEach {
+                print(it.terminal+": ")
+                println(it.data.toString())
+            }
+        }
     }
 }
 
@@ -179,7 +197,7 @@ class SymbolsTable: View() {
             textFill = Color.BROWN
         }
         tableview(syntacticList) {
-            readonlyColumn("name",SAT::s)
+            readonlyColumn("name",SAT::name)
             readonlyColumn("id",SAT::id)
             readonlyColumn("+",SAT::plus)
             readonlyColumn("*",SAT::by)

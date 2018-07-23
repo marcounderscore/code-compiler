@@ -68,7 +68,7 @@ class LexerAnalyzer {
                     if (category != Constants.NULL){
                         val fileHandler = FileHandler()
                         fileHandler.write(Register(token,getType(category,token),getSize(category,token),"",category,HashAlgorithm.getHash(token),getTyping(category,token)))
-                        Mutables.codeList.push(Register(token,getType(category,token),getSize(category,token),"",category,HashAlgorithm.getHash(token),getTyping(category,token)))
+                        Mutables.inputStack.push(token)
                     }else{
                         Mutables.errorList.add(Error(token,Constants.LEXER_ERROR,Constants.TOKEN_NOT_FOUND_EXCEPTION,lineCounter)).toString()
                         println("Lexer error: $token Token no reconocido")

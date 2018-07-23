@@ -1,8 +1,8 @@
-import models.Error
-import models.Register
-import models.SAT
-import models.SyntacticDebugTable
+import models.*
 import java.util.*
+import java.util.ArrayList
+
+
 
 object Mutables {
     @JvmStatic
@@ -12,7 +12,11 @@ object Mutables {
     @JvmStatic
     val syntacticTableList = ArrayList<SAT>()
     @JvmStatic
-    val codeList = Stack<Register>()
+    val codeStack = Stack<String>()
+    @JvmStatic
+    val inputStack = Stack<String>()
     @JvmStatic
     val syntacticDebugList = ArrayList<SyntacticDebugTable>()
+    @JvmStatic
+    val syntacticDynamicList = ArrayList<ArrayList<Terminal>>()
 }

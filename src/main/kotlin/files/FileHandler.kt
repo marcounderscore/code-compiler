@@ -45,14 +45,14 @@ class FileHandler {
             val category = readString(file)
             val typing =readString(file)
             if (token[0].toInt()>0){
-                println("//-----Some register------//")
+                /*println("//-----Some register------//")
                 println("Token: "+token)
                 println("Type: "+type)
                 println("Size: "+size)
                 println("Value: "+value)
                 println("Category: "+category)
                 println("Position: "+position)
-                println("File pointer: "+file.filePointer)
+                println("File pointer: "+file.filePointer)*/
                 Mutables.lexerTableList.add(Register(token,type,size,value,category,position.toLong(),typing))
             }
             position++

@@ -1,7 +1,7 @@
 package models
 
 data class SAT(
-        val s: String,
+        val name: String,
         val id: String,
         val plus: String,
         val by: String,

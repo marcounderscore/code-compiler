@@ -2,7 +2,7 @@ class asdfg {
 	val Int test1 = 3 + 4 - 5 * 2 / 7 , test2 = 4 , test6 = 4.4
 	var String test3 = # asdsada # , x = # asdas #
 	val Float test4 = 4.6
-	var Bool test5 = true
+	var Bool test5 = true , test8 = false
 	fun data ( Int param , String param1 ) : String {
 		if ( 5 > 3 and 3 < 5 or true ) {
 			x = 3

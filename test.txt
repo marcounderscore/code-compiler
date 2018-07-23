@@ -18,6 +18,7 @@ class asdfg {
 	}
 	fun data ( ) {
 		x = # asdas #
+		if ( x != y and x == z ) { } else { }
 		return empty
 	}
 	val Int test = y

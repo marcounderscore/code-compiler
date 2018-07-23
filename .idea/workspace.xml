@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="452c6f8d-6062-434c-90ae-5eacc95fa8df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Test.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/symbols_table" afterPath="$PROJECT_DIR$/symbols_table" />
       <change beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
     </list>
@@ -1104,7 +1103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532355625862</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Minor tests done">
+      <created>1532367628608</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1532367628608</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1169,7 +1175,8 @@
     <MESSAGE value="Minor changes to adapt code to new procedure" />
     <MESSAGE value="Own grammar adapted" />
     <MESSAGE value="test fil added" />
-    <option name="LAST_COMMIT_MESSAGE" value="test fil added" />
+    <MESSAGE value="Minor tests done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor tests done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -14,7 +14,7 @@ object Mutables {
     @JvmStatic
     val codeStack = Stack<String>()
     @JvmStatic
-    val inputStack = Stack<String>()
+    val inputStack = Stack<Token>()
     @JvmStatic
     val syntacticDebugList = ArrayList<SyntacticDebugTable>()
     @JvmStatic

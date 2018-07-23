@@ -4,17 +4,18 @@ import Constants
 import Mutables
 import models.Error
 import models.SyntacticDebugTable
+import models.Token
 import java.util.*
 import kotlin.collections.ArrayList
 
 
 class SyntacticAnalyzer {
     fun makeSyntacticAnalysis(){
-        Mutables.inputStack.push("$")
+        Mutables.inputStack.push(Token("$",1))
         Collections.reverse(Mutables.inputStack)
         while (Mutables.codeStack.peek() != "$") {
-            if (Mutables.codeStack.peek() != Mutables.inputStack.peek()){
-                val rule = getRule(Mutables.codeStack.peek(), Mutables.inputStack.peek())
+            if (Mutables.codeStack.peek() != Mutables.inputStack.peek().token){
+                val rule = getRule(Mutables.codeStack.peek(), Mutables.inputStack.peek().token)
                 printStacks() //Print the stacks in the interface
                 if (!rule.isEmpty()){
                     Mutables.codeStack.pop()
@@ -26,7 +27,7 @@ class SyntacticAnalyzer {
                         Collections.reverse(rule)
                     }
                 }else{  //The analysis found an error, there is no rule for the input
-                    Mutables.errorList.add(Error("Rule: "+Mutables.codeStack.peek()+" <> "+Mutables.inputStack.peek(),Constants.SYNTACTIC_ERROR,Constants.RULE_NOT_FOUND_EXCEPTION,1)).toString()
+                    Mutables.errorList.add(Error("Rule near token: "+Mutables.inputStack.peek().token,Constants.SYNTACTIC_ERROR,Constants.RULE_NOT_FOUND_EXCEPTION,Mutables.inputStack.peek().line)).toString()
                     break
                 }
             }else{ //there are the same terminal in both stacks
@@ -57,9 +58,9 @@ class SyntacticAnalyzer {
     private fun printStacks(){
         var input = ""
         var stack = ""
-        val cloneInput = Mutables.inputStack.clone() as Stack<String>
+        val cloneInput = Mutables.inputStack.clone() as Stack<Token>
         while (!cloneInput.empty()){
-            input += cloneInput.peek()+" "
+            input += cloneInput.peek().token+" "
             cloneInput.pop()
         }
         Mutables.codeStack.forEach {

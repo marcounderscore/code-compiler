@@ -15,11 +15,12 @@ class SyntacticAnalyzer {
         Collections.reverse(Mutables.inputStack)
         while (Mutables.codeStack.peek() != "$") {
             if (Mutables.codeStack.peek() != Mutables.inputStack.peek().token){
+                //Return the rule finding into the syntactic analysis table json file sending both stack's peeks
                 val rule = getRule(Mutables.codeStack.peek(), Mutables.inputStack.peek().token)
                 printStacks() //Print the stacks in the interface
-                if (!rule.isEmpty()){
+                if (!rule.isEmpty()){ //If the rule exists pop the codeStack
                     Mutables.codeStack.pop()
-                    if (rule[0] != "ε"){
+                    if (rule[0] != "ε"){ // if the rule is not empty codeStack updates with rule elements
                         Collections.reverse(rule)
                         rule.forEach {
                             Mutables.codeStack.push(it)
@@ -43,11 +44,11 @@ class SyntacticAnalyzer {
 
     private fun getRule(stack: String, input: String): ArrayList<String>{
         var array = ArrayList<String>()
-        Mutables.syntacticDynamicList.forEach { item ->
+        Mutables.syntacticDynamicList.forEach { item -> //Find in every file of the table
             val production = item.find { it.terminal == "name" && it.data[0] == stack }
-            if (production != null){
+            if (production != null){ //if the production name exists
                 val element = item.find { it.terminal == input }
-                if (element != null){
+                if (element != null){ //if the column name exists
                     array = element.data
                 }
             }
